@@ -49,3 +49,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a:link {
+  text-decoration: none;
+}
+
+.portfolio-img {
+  color:#fafafa;
+}
+
+.portfolio-img:hover {
+  color:#1976d2;
+}

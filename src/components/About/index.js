@@ -3,7 +3,9 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
-import { Avatar } from "@mui/material";
+import { Avatar, Typography } from "@mui/material";
+import Profile from "../../assets/img/profile.jpeg";
+import { textAlign } from "@mui/system";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -17,15 +19,27 @@ export default function About() {
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
-        <Grid item xs={2}>
-          <Avatar alt="Jeremy Gieske" src="../../assets/img/profile.jpeg" sx={{ width: 100, height: 100 }} />
+        <Grid item xs={4} md={2}>
+          <Item sx={{ align: "center" }}>
+            <Avatar
+              alt="Jeremy Gieske"
+              sx={{ width: "95%", height: "95%" }}
+              src={Profile}
+            />
+            <Typography variant="h4">Jeremy Gieske</Typography>
+            <Typography>Full Stack Web Developer</Typography>
+          </Item>
         </Grid>
-        <Grid item xs={10}>
+        <Grid item xs={8} md={10}>
           <Item>
-            Passionate about technology and especially agile development, I
-            currently work in Target Technology Services as a Lead Scrum Master
-            supporting corporate systems. My current team is using React to
-            develop custom apps for our store and distribution team members.
+            <Typography variant="body1">
+              Experienced tech leader with over 15 years of leading and
+              contributing to diverse, large-scale technology implementations at
+              one of the world’s largest retail companies. Passionate about
+              growing strong teams that develop amazing apps to solve tough
+              business problems. Experience with React, Javascript, Postgres,
+              MongoDb, MySQL2, HTML, CSS.
+            </Typography>
           </Item>
         </Grid>
       </Grid>
