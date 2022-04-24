@@ -42,6 +42,7 @@ export default function Projects() {
   );
 }
 
+//Array contains the imported location for the img and an anchor tag to all the text to be a link to the published app/site
 const itemData = [
   {
     img: OgreQuest,

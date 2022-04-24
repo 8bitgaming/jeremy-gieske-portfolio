@@ -4,6 +4,7 @@ import stackoverflow from "../../assets/img/stackoverflow.png";
 import github from "../../assets/img/github.png";
 import { Container, Box, Typography } from "@mui/material";
 
+//Footer with anchor tags and imported icons downloaded from www.iconfinder.com
 function Footer() {
   return (
     <Container>

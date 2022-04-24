@@ -7,6 +7,7 @@ import { Avatar, Typography } from "@mui/material";
 import Profile from "../../assets/img/profile.jpeg";
 import { textAlign } from "@mui/system";
 
+//Using material ui paper to provide white background and Box/Grid to manage the layout
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   ...theme.typography.body2,

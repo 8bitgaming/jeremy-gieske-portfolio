@@ -9,6 +9,7 @@ import About from "../About";
 import Contact from "../Contact";
 import Resume from "../Resume";
 
+//Overall Navigation is driven by this Material-ui tab component
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -49,6 +50,8 @@ export default function BasicTabs() {
     setValue(newValue);
   };
 
+  // Changed to scrollable for mobile friendly/small form factor screens
+  //Based on value - presents the appropriate sub-component
   return (
     <Box sx={{ width: "100%" }}>
       <Box sx={{ borderBottom: 1, borderLeft: 2, borderColor: "divider" }}>
@@ -59,7 +62,7 @@ export default function BasicTabs() {
           scrollButtons
           allowScrollButtonsMobile
           aria-label="basic tabs example"
-          textColor="white"
+          textColor= "primary.contrastText"
         >
           <Tab label="About Me" {...a11yProps(0)} />
           <Tab label="Portfolio" {...a11yProps(1)} />

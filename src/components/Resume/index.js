@@ -2,6 +2,7 @@ import React from "react";
 import Button from "@mui/material/Button";
 import { Container, Box, Typography } from "@mui/material";
 
+//Resume section
 export default function Resume() {
   return (
     <Box>
