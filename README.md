@@ -17,7 +17,7 @@ This is a portfolio site for Jeremy Gieske, with examples of recent project with
 
 
 ## Installation instructions 
-Follow this link to the deployed site: 
+Follow this link to the deployed site: https://8bitgaming.github.io/jeremy-gieske-portfolio/
 
 ## Usage instructions 
 N/A
