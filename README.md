@@ -3,6 +3,7 @@
 # My Portfolio
 
 ## Description
+![screenshot of Jeremy Gieske Portfolio](./src/assets/img/screenshot.png?raw=true)
 This is a portfolio site for Jeremy Gieske, with examples of recent project with links to the deployed apps and github repos, plus my resume.
 
 ## Table of Contents
