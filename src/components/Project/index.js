@@ -8,7 +8,7 @@ import OgreQuest from "../../assets/img/OgreQuest.png";
 import Blogger from "../../assets/img/blogger.png";
 import Travel from "../../assets/img/randomTravel.png";
 import Social from "../../assets/img/social-network.jpg";
-import Weather from "../../assets/img/weather.png";
+import ParkAddVenture from "../../assets/img/Park-add-venture-mobile.png"
 import Team from "../../assets/img/team-builder.jpg";
 import { Typography } from "@mui/material";
 
@@ -45,6 +45,19 @@ export default function Projects() {
 //Array contains the imported location for the img and an anchor tag to all the text to be a link to the published app/site
 const itemData = [
   {
+    img: ParkAddVenture,
+    title: (
+      <a
+        class="portfolio-img"
+        href={`https://parkaddventure.herokuapp.com/`}
+      >
+        {<Typography variant="h6">Park-Add-Venture</Typography>}
+      </a>
+    ),
+    tech: "MERN Stack (MongoDB, Express, React, Node)",
+    href: "https://github.com/8bitgaming/Park-Add-Venture",
+  },
+  {
     img: OgreQuest,
     title: (
       <a class="portfolio-img" href={`https://ogrequest.herokuapp.com/`}>
@@ -66,19 +79,6 @@ const itemData = [
     ),
     tech: "Express, Sequelize, MySQL2",
     href: "https://github.com/8bitgaming/12-blogger",
-  },
-  {
-    img: Weather,
-    title: (
-      <a
-        class="portfolio-img"
-        href={`https://8bitgaming.github.io/06-weather-outlook/`}
-      >
-        {<Typography variant="h6">Weather Outlook</Typography>}
-      </a>
-    ),
-    tech: "Javascript, APIs, HTML/CSS",
-    href: "https://github.com/8bitgaming/06-weather-outlook",
   },
   {
     img: Social,
